@@ -301,6 +301,7 @@ header{
 
 
 .index__parallax {
+    height: 450px;
     background-image: url(../images/index/1.jpg);
 
     background-attachment: fixed;
@@ -309,9 +310,9 @@ header{
     background-size: cover;
     border-radius: 15px;
 
-    margin: 80px 20px 20px 20px;
+    margin: 80px 5px 20px 5px;
     padding: 150px;
-    height: 150px;
+    
 }
 
 .index__parrafoParallax {
@@ -571,7 +572,7 @@ header{
     background-color: #380247;
     padding: 10px;
     margin-top: 11px;
-    height: 20px;
+    height: 40px;
     font-size: 1rem;
 }
 
@@ -872,3 +873,9 @@ header{
 }
 
 
+
+
+
+.card{
+    margin: 20px;
+}

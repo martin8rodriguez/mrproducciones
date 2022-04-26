@@ -7,6 +7,7 @@
     <title>martinrodriguezmusica-4contacto</title>
     <link rel="shortcut icon" href="images/Favicon.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -62,8 +63,14 @@
                 <fieldset class="fieldset">
                     <legend class="legend__formulario"> Formulario de contacto</legend>
                     <div class="div__formulario">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre">
+                        <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                            </div>
+                          </div>
                         <label for="telefono"> Teléfono </label>
                         <input type="number" name="telefono">
                         <label for="email">Email</label>
@@ -74,6 +81,19 @@
                                 <input type="radio" name="sexo"> Femenino
                                 <input type="radio" name="sexo" checked> Otro
                             </div>
+                            <div class="row g-3 align-items-center">
+                                <div class="col-auto">
+                                  <label for="inputPassword6" class="col-form-label">Password</label>
+                                </div>
+                                <div class="col-auto">
+                                  <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                </div>
+                                <div class="col-auto">
+                                  <span id="passwordHelpInline" class="form-text">
+                                    Must be 8-20 characters long.
+                                  </span>
+                                </div>
+                              </div>
                         <label for="servicio">Servicio a consultar</label>
                         <select name="servicio" >
                             <option value="">Producción Musical</option>
@@ -87,10 +107,15 @@
                         <textarea name="mensaje" placeholder="Deje su consulta aquí"></textarea>
                         <input type="submit" value="Enviar">
                         <input type="reset" value="Limpiar">
+                        <div class="row g-3 align-items-center">
+</div>
                     </div>
                 </fieldset>
             </form><!--Cierra Formulario de Contacto-->
+
+            
         </section>
+
 
         <footer class="footer"> <!-- Abre Footer-->
             <div class="footer__div">
@@ -128,6 +153,8 @@
         </footer> <!-- Cierra Footer-->     
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <script>
         AOS.init();
       </script> 

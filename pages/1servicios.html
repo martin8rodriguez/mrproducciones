@@ -7,11 +7,13 @@
     <title>martinrodriguezmusica-servicios</title>
     <link rel="shortcut icon" href="images/Favicon.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body class="contenedor2">
     <div class="contenedor__servicios">
+
         <header>   
             <div class="header__menu">
                 <a href="../index.html"><img class="imgLogo" src="../images/LOGO.bmp" alt="logo"></a>
@@ -55,6 +57,38 @@
             </div>
         </header><!--Cierra Navegador-->
         
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"  >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
         <section class="servicios__section">  
             <h1><a class="tituloPagina index__servicios__titulo"" href="1servicios.html">Servicios</a></h1>
 
@@ -73,7 +107,20 @@
 
             <div data-aos="fade-right" id="produccion" class="servicios__produccion">
                 <div>
-                    <img class="servicios__img" src="../images/index/servicio_prod.jpg" alt="img.Producción Musical">
+                    <!--img class="servicios__img" src="../images/index/servicio_prod.jpg" alt="img.Producción Musical">-->
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../images/index/servicios_beat.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/index/servicios_pista.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../images/index/servicio_prod.jpg" class="d-block w-50" alt="...">
+                          </div>
+                        </div>
+                      </div>
                 </div>
                 <div class="servicios__produccion__texto">
                     <h2 class="serviciosH2">PRODUCCION MUSICAL</h2>
@@ -188,22 +235,22 @@
         </section>
 
 
-        <footer class="footer"> <!-- Abre Footer-->
+        <footer class="footer row"> <!-- Abre Footer-->
             <div class="footer__div">
-                <ul>
+                <ul class="col-lg-2 col-md-4">
                     <h3><a href="5asistencia.html" target="blank"> Asistencia</a></h3>
                     <li><a href="/5asistencia.html#preguntas" target="blank"> Preguntas Frecuentes</a></li>
                     <li><a href="5asistencia.html#metodos" target="blank"> Metodos de pago</a></li>
                     <li><a href="5asistencia.html#politicas" target="blank"> Póliticas de Devolución</a></li>
                     <li><a href="4contacto.html" target="blank">Contacto</a></li>   
                 </ul>
-                <ul>
+                <ul class="col-lg-2 col-md-4">
                     <h3><a> Categorías</a></h3>
                     <li><a href="1servicios.html"> Servicios</a></li> 
                     <li><a href="2multimedia.html"> Multimedia</a></li>
                     <li><a href="3biografia.html"> Biografía</a></li>  
                 </ul>
-                <div class="footer__redes">
+                <div class="footer__redes col-lg-1 col-md-2">
                     <a href="https://www.instagram.com/martin8rod/" target="blank">
                         <ion-icon name="logo-instagram"></ion-icon>
                     </a>
@@ -216,13 +263,15 @@
                         <ion-icon name="logo-twitter"></ion-icon>
                     </a>
                 </div>
-                <p id="footer__direccion"> Villa General Mitre, CABA, Argentina.</p>
-                <iframe class="footer__mapa__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4780.243723887978!2d-58.468614396782094!3d-34.60627025416889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9ff31821b9b%3A0xfb2148a7ccff1341!2sAlejandro%20Magari%C3%B1os%20Cervantes%20%26%20Manuel%20Ricardo%20Trelles%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1648910912915!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="col-lg-1 col-md-2" id="footer__direccion"> Villa General Mitre, CABA, Argentina.</p>
+                <iframe class="footer__mapa__img col-lg-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4780.243723887978!2d-58.468614396782094!3d-34.60627025416889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9ff31821b9b%3A0xfb2148a7ccff1341!2sAlejandro%20Magari%C3%B1os%20Cervantes%20%26%20Manuel%20Ricardo%20Trelles%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1648910912915!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 
             </div>
             <p> ™ Todos los derechos reservados. 2022. Diseño Web por<a href="pages/3biografia.html">Martín Rodríguez</a></p>
         </footer> <!-- Cierra Footer-->  
     </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
