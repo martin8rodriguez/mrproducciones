@@ -62,158 +62,7 @@ footer{
 
 
 
-@media (max-width:360px){
-    .contenedor__index{
-        display: flex;
-        flex-direction: column;
-        grid-template-areas:
-        "header"
-        "div"
-        "section"
-        "aside"
-        "footer";
 
-    }
-
-    html{
-        font-size: 50%;
-    }
-
-    .header__redes{
-        display: none;
-    }
-    
-
-    .nav ul{
-        display: flex;
-        flex-direction: column;
-        margin-right: 15px;
-        justify-content: right;
-    }
-
-    .index__servicios{
-        justify-content: center;
-    }
-
-    .div__parallax>p{
-        margin: 70px 0 0 0;
-        align-items: center;
-        width: 75%;
-        padding: 50px;
-        justify-content: center;
-        font-size: 3rem;
-        background-image: url(../images/index/1.jpg);
-        background-position: center;
-        background-attachment: local;
-        border-radius: 0;
-    }
-
-    .index__servicios div>p{
-        font-size: 200%;
-    }
-
-    .aside h2{
-        display: none;
-    }
-
-    .aside p {
-        display: none;
-    }
-
-    .aside input {
-        display: none;
-    }
-
-    .footer__redes{
-        display: none;
-    }
-
-    .footer__div iframe{
-        display: none;
-    }
-    
-    .footer ul{
-        font-size: 1.5rem;
-    }
-
-    #footer__direccion{
-        display: none;
-    }
-
-
-    .contenedor__servicios{
-        display: flex;
-        flex-direction: column;
-        grid-template-areas: 
-        "header"
-        "section"
-        "footer";
-    }
-
-    .servicios__section div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    section>h1{
-        margin-top: 20px;
-    }
-
-    section a{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .listaLi{
-        display: none;
-    }
-
-    /**Media Queries MULTIMEDIA**/
-
-    .contenedor__multimedia{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "section"
-        "div"
-        "footer";
-        grid-template-columns: 1fr;
-    }
- 
-    .div__multimedia iframe{
-        width: 100%;
-    }
-
-    /**Media Queries BIOGRAFIA**/
-
-    .contenedor__biografia{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "section"
-        "div"
-        "footer";
-        grid-template-columns: 1fr;
-    }
-
-        /**Media Queries CONTACTO**/
-
-        /**Media Queries ASISTENCIA**/
-
-    .contenedor__asistencia{
-        display: grid;
-        grid-template-areas:
-        "header"
-        "section"
-        "footer";
-        grid-template-columns: 1fr;
-    }
-
-    .asistencia__politicas{
-        font-size: 2.1rem;
-    }
-}
 
 header{
     background-color: black;
@@ -253,6 +102,7 @@ header{
     border-color: #a655bd;
     font-size: 2rem;
 }
+
 
 .nav ul{
     display: flex;
@@ -344,12 +194,6 @@ header{
 }
 
 
-.index__servicios{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .index__servicios__h2{
     text-transform: uppercase;
     background-image: linear-gradient(45deg,black 10%, #460258 60%, #ce6be9) ;
@@ -363,12 +207,9 @@ header{
 }
 
 .index__servicios__box{
-    display: grid;
-    grid-template-rows: 1fr 2fr 2fr 1fr;
     width: 200px;
-    height: 400px;
+    height: 500px;
     border: inset 3px black;
-    overflow: hidden;
     border-radius: 13px;
     box-shadow: 1px 1px 10px  5px #ce6be9;
     padding: 10px;
@@ -878,4 +719,10 @@ header{
 
 .card{
     margin: 20px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
 }
