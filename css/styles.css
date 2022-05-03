@@ -64,8 +64,7 @@ footer{
 
 @media (max-width:360px){
     .contenedor__index{
-        display: flex;
-        flex-direction: column;
+        display: grid;
         grid-template-areas:
         "header"
         "div"
@@ -124,6 +123,10 @@ footer{
         display: none;
     }
 
+    .footer{
+        margin: 0;
+    }
+
     .footer__redes{
         display: none;
     }
@@ -150,6 +153,10 @@ footer{
         "footer";
     }
 
+    .servicios__section{
+        font-size: 4rem;
+    }
+
     .servicios__section div{
         display: flex;
         flex-direction: column;
@@ -168,6 +175,8 @@ footer{
     .listaLi{
         display: none;
     }
+
+
 
     /**Media Queries MULTIMEDIA**/
 
@@ -216,16 +225,15 @@ footer{
 }
 
 header{
+    width: 100%;
     background-color: black;
     background-image: linear-gradient(to bottom, #a655bd 2%, #460258 10% , black 50%, #460258 90%, #a655bd 99%  );
-    width: 100%;
     position: fixed;
     z-index: 100;
     box-shadow: 2px 2px 6px 2px #a655bd;
 }
 
 .header__menu{
-    margin: auto;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -323,6 +331,9 @@ header{
     text-shadow: 5px 5px 2px #380247 ;
 }
 
+.index__section{
+    width: 100%;
+}
 
 .index__servicios__titulo{
     display: block;
@@ -345,8 +356,9 @@ header{
 
 .index__servicios{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-content: flex-end;
 }
 
 .index__servicios__h2{
@@ -465,6 +477,8 @@ header{
 }
 
 .footer{
+    width: 100%;
+    margin: auto;
     background-color: black;
     background-image: linear-gradient(to top, #460258 40%, black 80% );
     display: flex;
@@ -474,6 +488,7 @@ header{
 
 .footer a{
     color: white;
+    font-size: 1.5rem;
 }
 
 
@@ -482,6 +497,7 @@ header{
     display: block;
     text-align: center;
     padding: 5px;
+    font-size: 1.5rem;
 }
 
 .footer__div{
@@ -539,6 +555,7 @@ header{
 
 .contenedor__servicios{
     height: 100vh;
+    width: 100%;
     display: grid;
     grid-template-areas: 
     "header header header"
@@ -550,6 +567,7 @@ header{
 
 
 .servicios__section{
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
