@@ -1,0 +1,28 @@
+
+
+/**Comienza BIOGRAFIA**/
+
+.contenedor__biografia{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "section section section"
+    "div div div"
+    "footer footer footer ";
+}
+
+.contenedor__biografia iframe{
+    margin: 10px;
+}
+
+.biografia__texto{
+    color: white;
+    font-size: 1.7rem;
+    margin: 20px;
+    text-align: justify;
+}
+
+
+
+/**Fin BIOGRAFIA**/

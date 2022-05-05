@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;   
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+/**Comienza HEADER-NAV-FOOTER**/
+header{
+    background-color: black;
+    background-image: linear-gradient(to bottom, #a655bd 2%, #460258 10% , black 50%, #460258 90%, #a655bd 99%  );
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 2px 2px 6px 2px #a655bd;
+}
+
+.header__menu{
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgLogo{
+    width: 150px;
+    padding: 2px;
+}
+
+
+.header__redes a{
+    color: white;
+    margin: 20px;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.header__redes a:hover{
+    color: #ce6be9;
+    transition: 0.2s;
+    border-radius: 10px;
+    border-color: #a655bd;
+    font-size: 2rem;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.nav ul li a{
+    color: white;
+    font-weight: bold;
+    margin: 20px;  
+    font-size: 2rem;
+}
+
+.nav ul li ul {
+    display:none;
+    position: absolute;
+    min-width: 300px;
+    background-color: black;
+    margin: 10px;
+}
+
+.nav ul li ul a{
+    display: block;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+.nav  li:hover > ul {
+    display: block;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #a655bd 2%, #460258 10% , black 50%, #460258 90%, #a655bd 99%  );
+    box-shadow: 2px 2px 5px 5px #a655bd;
+}
+
+.nav  li a:hover{
+    background-color: #a655bd;
+    padding: 6px;
+    transition: 0.2s;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 3px #a655bd;
+}
+
+.footer{
+    background-color: black;
+    background-image: linear-gradient(to top, #460258 40%, black 80% );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    p{
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5rem;
+    }
+
+    a{
+    color: white;  
+    font-size: 1.5rem;
+    }
+
+    .martin{
+        margin: 4px;
+        font-size: 1.8rem;
+    }
+}
+
+
+.footer__div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer div ul{
+    margin: 0 20px 0 20px;
+}
+
+
+.footer__mapa__img{
+    width: 250px;
+    height: 120px;
+    border-radius: 15px;
+}
+
+.footer__redes a {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.footer a:hover{
+    color: #ce6be9;
+    transition: 0.2s;
+}
+
+/**Fin HEADER-NAV-FOOTER**/

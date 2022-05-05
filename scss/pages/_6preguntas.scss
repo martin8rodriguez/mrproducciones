@@ -1,0 +1,66 @@
+
+/**Comienza ASISTENCIA-PREGUNTAS**/
+
+.contenedor__asistencia{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "section section section"
+    "footer footer footer";
+}
+
+.asistencia__frecuentes{
+    margin: 15px;
+    font-size: 3rem;
+    color: white;
+    text-align: center
+}
+
+.asistencia__div{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.asistencia__div h3{
+    background-color: #791a94;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.asistencia__metodos{
+    margin: 15px;
+    font-size: 3rem;
+    color: white;
+    text-align: center
+}
+
+.asistencia__metodos ul{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5rem;
+    text-align: left;   
+}
+
+.asistencia__politicas{
+    margin: 15px;
+    font-size: 3rem;
+    color: white;
+    text-align: center
+}
+
+.asistencia__politicas p{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+
+/**Fin ASISTENCIA-PREGUNTAS**/
