@@ -1,0 +1,113 @@
+
+/**Comienza MULTIMEDIA**/
+
+.contenedor__multimedia{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section__multimedia{
+    width: 100%;
+}
+.index__multimedia__titulo{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    margin: 76px 0 15px 0; 
+    padding: 10px;
+    text-shadow: 4px 4px 8px black;
+
+    background-image: radial-gradient(black 1%,#380247 10%,#ce6be9);
+    box-shadow: 1px 1px 4px 10px #ce6be9;
+
+}
+
+
+.listaMultimedia{
+    width: 100%;
+    height: 40px;
+    background-color: #380247;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    a{
+        font-size: 1.5rem;
+        color: white;
+        &:hover{
+            text-shadow: 2px 2px 4px white;
+        }
+    }
+}
+
+.multimedia__produccion{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-size: 3rem;
+        color: white;
+        margin: auto;
+        width: 95%;
+        justify-content: center;
+        text-align: center;
+        margin-top: 5px;
+        padding: 10px;  
+        border-radius: 5px; 
+        text-shadow: 2px 2px 4px #ce6be9;
+    }
+}
+
+
+.boxesProduccion{
+    height: 100%;
+    display: flex;
+    flex-grow: row nowrap;
+    margin: 20px;
+}
+
+.multimedia__boxProduccion{
+    height: 100%;
+    width: 300px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px  5px #ce6be9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul{
+        width: 80%;
+        margin: 10px;
+
+        li{
+            color: white;
+            font-size: 1.5rem;
+            text-align: justify;
+            margin: 5px;
+        }       
+    }
+}
+
+.imgBoxMultimedia{
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.audioControls{
+    width: 80%;
+}
+
+.cosas{
+    margin-top: 50px;
+}
+
+/**Fin MULTIMEDIA**/
